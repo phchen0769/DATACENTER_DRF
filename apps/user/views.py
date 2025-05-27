@@ -18,7 +18,7 @@ from rest_framework import permissions
 from rest_framework import authentication
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.tokens import RefreshToken
-from remote_diagnosis_drf.settings import DEFAULT_FROM_EMAIL
+from datacenter_drf.settings import DEFAULT_FROM_EMAIL
 
 # from rest_framework_bulk import BulkModelViewSet
 
@@ -35,7 +35,7 @@ from .serializers import (
     RouterSerializer,
     UserInfoSerializer,
 )
-from remote_diagnosis_drf.settings import APIKEY
+from datacenter_drf.settings import APIKEY
 from utils.yunpian import YunPian
 
 

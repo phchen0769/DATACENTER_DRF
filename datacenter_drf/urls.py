@@ -1,5 +1,5 @@
 """
-URL configuration for remote_diagnosis_drf project.
+URL configuration for datacenter_drf project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -76,7 +76,7 @@ urlpatterns = [
     # api文档功能, 允许任何人访问
     path(
         "docs",
-        include_docs_urls(title="remote_diagnosis_drf", permission_classes=[]),
+        include_docs_urls(title="datacenter_drf", permission_classes=[]),
     ),
     # api页面的登录功能
     # path("api-auth", include("rest_framework.urls")),

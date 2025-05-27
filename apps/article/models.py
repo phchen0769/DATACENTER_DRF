@@ -1,5 +1,6 @@
-from datetime import datetime, date
+from datetime import date
 from django.db import models
+from django.utils import timezone
 
 from apps.user.models import UserProfile
 
@@ -54,7 +55,7 @@ class Chapter(models.Model):
     content = models.CharField(
         null=True, max_length=2000, verbose_name="内容", help_text="内容"
     )
-    add_time = models.DateTimeField(default=datetime.now, verbose_name="发布时间")
+    add_time = models.DateTimeField(default=timezone.now, verbose_name="发布时间")
 
     class Meta:
         app_label = "article"

@@ -12,7 +12,7 @@ from rest_framework.validators import UniqueValidator
 
 from .models import SmsVerifyCode, EmailVerifyCode, Role, Permission, Router
 
-from remote_diagnosis_drf.settings import REGEX_MOBILE, REGEX_EMAIL, TIME_ZONE
+from datacenter_drf.settings import REGEX_MOBILE, REGEX_EMAIL, TIME_ZONE
 
 User = get_user_model()
 

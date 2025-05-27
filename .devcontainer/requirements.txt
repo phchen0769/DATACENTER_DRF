@@ -17,3 +17,5 @@ Djangorestframework
 psycopg2-binary
 django-cors-headers
 djangorestframework-simplejwt
+pandas
+bs4

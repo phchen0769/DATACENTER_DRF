@@ -2,7 +2,7 @@ import os
 import django
 
 # 设置django环境，否则无法使用django的ORM
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "remote_diagnosis_drf.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "datacenter_drf.settings")
 django.setup()
 
 # 导入模型

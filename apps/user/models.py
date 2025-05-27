@@ -1,5 +1,4 @@
-from datetime import datetime, date
-
+from django.utils import timezone
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -155,7 +154,7 @@ class UserProfile(AbstractUser):
     )
 
     add_time = models.DateField(
-        default=date.today,
+        default=timezone.now,
         verbose_name="添加时间",
         help_text="添加时间",
     )
@@ -201,7 +200,7 @@ class SmsVerifyCode(models.Model):
         null=True, max_length=11, verbose_name="手机", help_text="手机"
     )
     add_time = models.DateTimeField(
-        default=datetime.now, verbose_name="添加时间", help_text="添加时间"
+        default=timezone.now, verbose_name="添加时间", help_text="添加时间"
     )
 
     class Meta:
@@ -224,7 +223,7 @@ class EmailVerifyCode(models.Model):
         null=True, unique=True, max_length=100, verbose_name="邮箱", help_text="邮箱"
     )
     add_time = models.DateTimeField(
-        default=datetime.now, verbose_name="添加时间", help_text="添加时间"
+        default=timezone.now, verbose_name="添加时间", help_text="添加时间"
     )
 
     class Meta:
