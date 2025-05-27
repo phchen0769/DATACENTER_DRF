@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "apps.user",
     "apps.article",
     "apps.feature",
+    "apps.finance",
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",

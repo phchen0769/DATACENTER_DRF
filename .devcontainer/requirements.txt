@@ -19,3 +19,4 @@ django-cors-headers
 djangorestframework-simplejwt
 pandas
 bs4
+lxml
