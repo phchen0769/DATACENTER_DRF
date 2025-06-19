@@ -147,6 +147,18 @@ permission_datas = [
         "desc": "Paper management permissions",
     },
     {
+        "name": "dividends-list",
+        "method": ["GET", "POST"],
+        "router_id": "",
+        "desc": "dividends management permissions",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["GET", "DELETE", "PUT", "PATCH", "OPTIONS"],
+        "router_id": "",
+        "desc": "dividends management permissions",
+    },
+    {
         "name": "sms-list",
         "method": ["GET", "POST"],
         "router_id": "",

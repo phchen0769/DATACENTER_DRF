@@ -147,6 +147,18 @@ permission_datas = [
         "desc": "试卷管理权限",
     },
     {
+        "name": "dividends-list",
+        "method": ["GET", "POST"],
+        "router_id": "",
+        "desc": "分红管理权限",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["GET", "DELETE", "PUT", "PATCH", "OPTIONS"],
+        "router_id": "",
+        "desc": "分红管理权限",
+    },
+    {
         "name": "sms-list",
         "method": ["GET", "POST"],
         "router_id": "",

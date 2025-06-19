@@ -1,6 +1,8 @@
 import os
 import django
+import sys
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # 设置django环境，否则无法使用django的ORM
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "datacenter_drf.settings")
 django.setup()

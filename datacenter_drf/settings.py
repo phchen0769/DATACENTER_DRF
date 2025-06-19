@@ -50,8 +50,6 @@ INSTALLED_APPS = [
     # 下面这个app用于刷新refresh_token后，将旧的加到blacklist时使用
     "rest_framework_simplejwt.token_blacklist",
     "django_filters",
-    # 添加webrtc
-    # "webrtc",
 ]
 
 

@@ -49,6 +49,9 @@ from apps.article.views import ArticleViewSet, ChapterViewSet
 # 从feature app中导入viewset
 from apps.feature.views import FeatureViewSet
 
+# 从finance app中导入viewset
+from apps.finance.views import DividendViewSet
+
 
 # simple router 不会自动添加末尾的斜杠
 router = SimpleRouter(trailing_slash=False)
@@ -71,6 +74,8 @@ router.register("chapters", ChapterViewSet, basename="chapters")
 # featurn app的url配置
 router.register("features", FeatureViewSet, basename="features")
 
+# finance app的url配置
+router.register("dividends", DividendViewSet, basename="dividends")
 
 urlpatterns = [
     # api文档功能, 允许任何人访问
@@ -78,8 +83,6 @@ urlpatterns = [
         "docs",
         include_docs_urls(title="datacenter_drf", permission_classes=[]),
     ),
-    # api页面的登录功能
-    # path("api-auth", include("rest_framework.urls")),
     # api页面的根路径
     path("api/", include(router.urls)),
     # simplejwt 验证用户名密码，并产生token
