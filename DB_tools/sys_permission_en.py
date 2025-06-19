@@ -3,7 +3,7 @@
 
 
 permission_datas = [
-    # Get personal user information
+    # 用户个人信息
     {
         "name": "userinfo-detail",
         "method": ["GET", "DELETE", "PUT", "PATCH", "OPTIONS"],
@@ -16,7 +16,7 @@ permission_datas = [
         "router_id": "",
         "desc": "Get personal user information",
     },
-    # User management permissions
+    # 用户管理
     {
         "name": "users-list",
         "method": ["GET", "POST"],
@@ -29,7 +29,7 @@ permission_datas = [
         "router_id": 2002,
         "desc": "User management permissions",
     },
-    # Role management data
+    # 角色管理
     {
         "name": "roles-list",
         "method": ["GET", "POST"],
@@ -42,7 +42,7 @@ permission_datas = [
         "router_id": 2004,
         "desc": "Role management permissions",
     },
-    # Permission management data
+    # 权限管理
     {
         "name": "permissions-list",
         "method": ["GET", "POST"],
@@ -55,7 +55,7 @@ permission_datas = [
         "router_id": 2005,
         "desc": "Permission management permissions",
     },
-    # Business
+    # 文章管理
     {
         "name": "articles-list",
         "method": ["GET"],
@@ -98,6 +98,7 @@ permission_datas = [
         "router_id": 3003,
         "desc": "Chapter management permissions",
     },
+    # 功能管理
     {
         "name": "features-list",
         "method": ["GET", "POST"],
@@ -110,6 +111,7 @@ permission_datas = [
         "router_id": 3003,
         "desc": "Feature management permissions",
     },
+    # 答案管理
     {
         "name": "answers-list",
         "method": ["GET", "POST"],
@@ -122,6 +124,7 @@ permission_datas = [
         "router_id": "",
         "desc": "Answer management permissions",
     },
+    # 问题管理
     {
         "name": "questions-list",
         "method": ["GET", "POST"],
@@ -134,6 +137,7 @@ permission_datas = [
         "router_id": "",
         "desc": "Question management permissions",
     },
+    # 试卷管理
     {
         "name": "papers-list",
         "method": ["GET", "POST"],
@@ -146,6 +150,7 @@ permission_datas = [
         "router_id": "",
         "desc": "Paper management permissions",
     },
+    # 分红管理
     {
         "name": "dividends-list",
         "method": ["GET", "POST"],
@@ -158,6 +163,7 @@ permission_datas = [
         "router_id": "",
         "desc": "dividends management permissions",
     },
+    # 短信管理
     {
         "name": "sms-list",
         "method": ["GET", "POST"],
@@ -170,6 +176,7 @@ permission_datas = [
         "router_id": "",
         "desc": "SMS management permissions",
     },
+    # 邮件管理
     {
         "name": "email-list",
         "method": ["GET", "POST"],
@@ -182,7 +189,7 @@ permission_datas = [
         "router_id": "",
         "desc": "Email management permissions",
     },
-    # Router management
+    # 路由管理
     {
         "name": "routers-list",
         "method": ["GET", "POST"],
