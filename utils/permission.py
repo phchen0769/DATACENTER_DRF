@@ -1,27 +1,9 @@
+from django.utils import timezone
 from rest_framework.permissions import BasePermission
 from rest_framework.authentication import BaseAuthentication
 from rest_framework import exceptions
 
-
-# class MineAuthentication(BaseAuthentication):
-#     """
-#     自定义验证类
-#     """
-
-#     def authenticate(self, request):
-#         # 读取用户请求token, 检验是否合法
-#         token = request.query_params.get("token")
-#         role = request.query_params.get("role")
-#         if not token:
-#             raise exceptions.AuthenticationFailed("认证失败")
-
-#         print(request.user.name)
-#         print(request.user.role)
-#         print(request.auth)
-#         return (
-#             User("张三", role),
-#             None,
-#         )
+from apps.api.models import PermanentToken
 
 
 class CustomPermission(BasePermission):

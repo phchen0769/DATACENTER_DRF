@@ -40,16 +40,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "apps.user",
-    "apps.article",
-    "apps.feature",
-    "apps.finance",
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
     # 下面这个app用于刷新refresh_token后，将旧的加到blacklist时使用
     "rest_framework_simplejwt.token_blacklist",
     "django_filters",
+    "apps.user",
+    "apps.api",
+    "apps.article",
+    "apps.feature",
+    "apps.finance",
 ]
 
 
@@ -175,7 +176,9 @@ REST_FRAMEWORK = {
         "utils.permission.CustomPermission",
     ),
     "DEFAULT_AUTHENTICATION_CLASSES": (
-        # 增加simplejwt认证方式
+        # 基于长期token的认证方式
+        "utils.authentication.DynamicAuthentication",
+        # 增加simplejwt认证方式（短期）
         "rest_framework_simplejwt.authentication.JWTAuthentication",
         "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.BasicAuthentication",

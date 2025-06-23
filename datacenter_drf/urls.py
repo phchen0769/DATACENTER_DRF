@@ -42,6 +42,7 @@ from apps.user.views import (
     RouterViewSet,
 )
 
+from apps.api.views import GeneratePermanentTokenView
 
 # 从article app中导入ArticleViewSet
 from apps.article.views import ArticleViewSet, ChapterViewSet
@@ -85,6 +86,12 @@ urlpatterns = [
     ),
     # api页面的根路径
     path("api/", include(router.urls)),
+    # 长期token
+    path(
+        "api/token",
+        GeneratePermanentTokenView.as_view(),
+        name="generate_permanent_token",
+    ),
     # simplejwt 验证用户名密码，并产生token
     path("api/login", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     # simplejwt 刷新token
