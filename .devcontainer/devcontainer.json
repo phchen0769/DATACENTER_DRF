@@ -28,9 +28,10 @@
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
 				"hlrossato.vscode-drf",
-				"akamud.vscode-theme-onedark",
 				"thebarkman.vscode-djaneiro",
-				"BenjaminBenais.copilot-theme"
+				"BenjaminBenais.copilot-theme",
+				"MarsCode.marscode-extension",
+				"Alibaba-Cloud.tongyi-lingma"
 			]
 		}
 	},
