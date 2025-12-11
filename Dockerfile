@@ -3,7 +3,9 @@ FROM alpine:latest
 LABEL MAINTAINER="Fedorov"
 
 # 替换apk使用的源
-COPY repositories /etc/apk/repositories
+RUN echo "https://dl-cdn.alpinelinux.org/alpine/latest-stable/main" > /etc/apk/repositories && \
+    echo "https://dl-cdn.alpinelinux.org/alpine/latest-stable/community" >> /etc/apk/repositories
+
 COPY requirements.txt /root/requirements.txt
 
 # 设定容器时间
