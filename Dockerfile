@@ -29,7 +29,7 @@ RUN apk add python3 \
 	py3-pip
 
 
-RUN pip3 install --no-cache-dir -r /root/requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages -r /root/requirements.txt
 
 # 添加/root/.local/bin目录到环境变量
 # ENV PATH="/root/.local/bin:${PATH}"

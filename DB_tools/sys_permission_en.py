@@ -111,6 +111,19 @@ permission_datas = [
         "router_id": 3003,
         "desc": "Feature management permissions",
     },
+    # 分红管理
+    {
+        "name": "dividends-list",
+        "method": ["GET", "POST"],
+        "router_id": 4000,
+        "desc": "dividends list",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["GET", "DELETE", "PUT", "PATCH", "OPTIONS"],
+        "router_id": 4000,
+        "desc": "Permission management permissions",
+    },
     # 答案管理
     {
         "name": "answers-list",
@@ -213,5 +226,36 @@ permission_datas = [
         "method": ["GET", "OPTIONS"],
         "router_id": "",
         "desc": "Online documentation access permissions",
+    },
+    # Finance Management
+    {
+        "name": "dividends-list",
+        "method": ["GET"],
+        "router_id": 5001,
+        "desc": "Dividend list",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["GET"],
+        "router_id": 5002,
+        "desc": "Dividend details",
+    },
+    {
+        "name": "dividends-list",
+        "method": ["POST"],
+        "router_id": 5003,
+        "desc": "Create dividend",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["PATCH"],
+        "router_id": 5004,
+        "desc": "Update dividend",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["DELETE"],
+        "router_id": 5001,
+        "desc": "Delete dividend",
     },
 ]

@@ -110,6 +110,19 @@ permission_datas = [
         "router_id": 3003,
         "desc": "功能管理权限",
     },
+    # 分红管理
+    {
+        "name": "dividends-list",
+        "method": ["GET", "POST"],
+        "router_id": 4000,
+        "desc": "分红管理",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["GET", "DELETE", "PUT", "PATCH", "OPTIONS"],
+        "router_id": 4000,
+        "desc": "分红管理",
+    },
     {
         "name": "answers-list",
         "method": ["GET", "POST"],
@@ -206,5 +219,36 @@ permission_datas = [
         "method": ["GET", "OPTIONS"],
         "router_id": "",
         "desc": "在线文档访问权限",
+    },
+    # 财务管理
+    {
+        "name": "dividends-list",
+        "method": ["GET"],
+        "router_id": 5001,
+        "desc": "股息列表",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["GET"],
+        "router_id": 5002,
+        "desc": "股息详情",
+    },
+    {
+        "name": "dividends-list",
+        "method": ["POST"],
+        "router_id": 5003,
+        "desc": "创建股息",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["PATCH"],
+        "router_id": 5004,
+        "desc": "更新股息",
+    },
+    {
+        "name": "dividends-detail",
+        "method": ["DELETE"],
+        "router_id": 5001,
+        "desc": "删除股息",
     },
 ]
